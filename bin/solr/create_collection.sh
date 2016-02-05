@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 # create solr collection
-echo "create solr collection..."
+echo "creating solr collection..."
 SOLR_COLLECTION="eagleeye"
 SOLR_DIR="/tmp/eagleeye_configs"
 SHARDS=1
 REPLICAS=1
-SOLR="http://172.31.13.76:8983/solr"
-ZK="172.31.13.75:2181/solr"
+SOLR="http://localhost:8983/solr"
+ZK="localhost:2181/solr"
 
 rm -rf $SOLR_DIR
 solrctl instancedir --generate $SOLR_DIR
