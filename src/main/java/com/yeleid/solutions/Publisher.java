@@ -4,15 +4,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import kafka.producer.KeyedMessage;
-import kafka.producer.ProducerConfig;
+
 import org.apache.http.HttpHeaders;
-import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.log4j.Logger;
+
+import kafka.producer.KeyedMessage;
+import kafka.producer.ProducerConfig;
 
 public interface Publisher {
     void send(List<String> data);

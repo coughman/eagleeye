@@ -1,15 +1,15 @@
 package com.yeleid.solutions;
 
-import com.yeleid.solutions.model.AppMetric;
-import com.yeleid.solutions.model.YarnCluster;
-import org.apache.log4j.Logger;
-import scala.collection.immutable.Stream;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
+
+import com.yeleid.solutions.model.AppMetric;
+import com.yeleid.solutions.model.YarnCluster;
 
 public class Main {
     private static final Logger logger = Logger.getLogger(Main.class.getName());

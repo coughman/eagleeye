@@ -1,16 +1,19 @@
 package com.yeleid.solutions;
 
-import com.google.common.io.ByteStreams;
-import org.apache.log4j.Logger;
-import org.codehaus.jackson.map.ObjectMapper;
-import scala.collection.immutable.Stream;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Properties;
+
+import org.apache.log4j.Logger;
+import org.codehaus.jackson.map.ObjectMapper;
+
+import com.google.common.io.ByteStreams;
 
 public class Utils {
     private static final Logger logger = Logger.getLogger(Utils.class.getName());
