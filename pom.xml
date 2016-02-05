@@ -11,6 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <cdh.version>cdh5.5.0</cdh.version>
     </properties>
 
     <build>
@@ -75,7 +76,7 @@
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-client</artifactId>
-            <version>1.0.0-cdh5.5.1</version>
+            <version>1.0.0-${cdh.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
