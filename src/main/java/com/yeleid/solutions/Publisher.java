@@ -45,7 +45,7 @@ public interface Publisher {
         private final Logger logger = Logger.getLogger(Publisher.class.getName());
         @Override
         public void send(List<String> data) {
-            logger.info(data);
+            logger.info("data size: " + data.size() + " data:" + data);
         }
     };
 
